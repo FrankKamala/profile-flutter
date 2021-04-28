@@ -12,10 +12,13 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.green,
-          title: Text('Home',textDirection: TextDirection.ltr,style: TextStyle(color: Colors.white),),
-
+          title: Text(
+            'Home',
+            textDirection: TextDirection.ltr,
+            style: TextStyle(color: Colors.white),
+          ),
         ),
-        body:SafeArea(
+        body: SafeArea(
           child: Column(
             children: [
               Center(
@@ -25,7 +28,8 @@ class MyApp extends StatelessWidget {
                   color: Colors.green,
                   height: 200,
                   width: 200,
-// child:AssetImage(assetName),
+                  child: Image.asset('images/set.jpg')
+                  ,
                 ),
               ),
             ],
