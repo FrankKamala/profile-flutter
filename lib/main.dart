@@ -21,18 +21,37 @@ class MyApp extends StatelessWidget {
         body: SafeArea(
           child: Column(
             children: [
-              Center(
-                child: Container(
-                  margin: EdgeInsets.all(10),
-                  alignment: Alignment.center,
-                  color: Colors.green,
-                  height: 200,
-                  width: 200,
-                  child: Image.asset('images/set.jpg')
-                  ,
-                ),
+              Column(
+                children: [
+                  Center(
+                    child: Container(
+                      margin: EdgeInsets.all(10),
+                      alignment: Alignment.center,
+                      color: Colors.green,
+                      height: 200,
+                      width: 200,
+                      child: Image.asset('images/set.jpg')
+                      ,
+
+
+                    ),
+
+                  ),
+
+
+                  Container(
+                    child: Text('Hello'),
+
+                  ),
+                  Container(
+                    child: Text('JKJ'),
+
+                  ),
+                ],
               ),
             ],
+
+
           ),
         ),
       ),
