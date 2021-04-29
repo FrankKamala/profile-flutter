@@ -19,8 +19,8 @@ class MyApp extends StatelessWidget {
           ),
         ),
         body: SafeArea(
-          child: Column(
-            children: [
+          child: Center(
+            child:
               Column(
                 children: [
                   Center(
@@ -40,16 +40,26 @@ class MyApp extends StatelessWidget {
 
 
                   Container(
-                    child: Text('Hello'),
+                    child: Center(
+                      child: Column(
+                        children: [
+                          Text('Name: Francis Kamala Albert'),
+                          Text('Country: KENYA'),
+
+                        ],
+                      ),
+                    )
 
                   ),
-                  Container(
-                    child: Text('JKJ'),
+                  Expanded(
+                    child: Container(
+                      child: Text('About: '),
 
+                    ),
                   ),
                 ],
               ),
-            ],
+
 
 
           ),
