@@ -42,12 +42,16 @@ class MyApp extends StatelessWidget {
                   Container(
                     child: Center(
                       child: Column(
-                        children: [
+                        children:<Widget> [
                           Text('Name: Francis Kamala Albert'),
-                          Text('Country: KENYA'),
+                          Text('Location: Nairobi, KENYA ',textDirection: TextDirection.ltr,),
+
 
                         ],
+
                       ),
+
+
                     )
 
                   ),
