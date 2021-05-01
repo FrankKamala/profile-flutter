@@ -31,7 +31,8 @@ class MyApp extends StatelessWidget {
                     height: 130,
                     width: 200,
 
-                    child: Image.asset('images/set.jpg'),
+
+                    child: Image.network('https://avatars.githubusercontent.com/u/40097786?v=4'),
                   ),
                 ),
                 Container(
@@ -57,8 +58,14 @@ class MyApp extends StatelessWidget {
 
                       children: [
                         Text(
-                            'About:I am a Mobile Developer and programmer living in Nairobi,Kenya, I make Android Applications using Java and XML.Below is are some of my works. '
-                            'I also do Web Development Using HTML ,CSS, JS and also Frameworks such as Angular. '),
+
+                            'A Mobile Developer and programmer living in Nairobi,Kenya, I make Android Applications using Java and XML.Below is are some of my works. '
+                            'I also do Web Development Using HTML ,CSS, JS and also Frameworks such as Angular. ',style: TextStyle(
+                            height: 1.2 ,// the height between text, default is 1.0
+                            letterSpacing: 1.0 // the white space between letter, default is 0.0
+                        )
+
+                        ),
                         Center(
                           child: Container(
                             margin: const EdgeInsets.only(top: 10.0),
